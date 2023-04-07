@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
+    
 
+    
     <link rel="stylesheet" href="/src/css/style.css">
     
     <title>Frontend Mentor | Sunnyside agency landing page</title>
@@ -13,78 +16,110 @@
   </head>
   <body>
     <main>
-      <header class="foto_de_uma_laranja">
-        <img src="./src/images/logo.svg" alt="">
+      <header class="topo">
 
-        <h1 class="texto_cabecalho">
-          We are creatives</h1>
+        <div class="topo__logo">
+          <img class="logo
+        " src="./src/images/logo.svg" alt="Logo Sunnyside">
 
-        <i></i>
-        <nav>
-          <ul>
-            <li><a href="">About</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
-        </nav>
+        <img   class="menu-bar" id="burger
+        " onclick="clickMenu()" src="/src/images/icon-hamburger.svg" alt="menu">
+
+        </div>
+
+        <div>
+          <menu class="itens" id="itens">
+            <ul>
+              <li><a class="menu" href="#">About</a></li>
+              <li><a class="menu" href="#">Services</a></li
+              <li><a class="menu" href="#">Projects</a></li>
+              <li><a class="menu contato" href="#">Contact</a></li>
+            </ul>
+          </menu>
+        </div>
+       
+          <h1 class="texto_cabecalho">
+            We are creatives
+          </h1>
+          <div>
+            <img class="seta" src="/src/images/icon-arrow-down.svg" alt="">  
+        </div>  
       </header>
+
+      <div> 
+        
+      </div>
+      
 
       <div class="area1">
 
-        <section class="campoCima transfrorm">
-          <img src="/src/images/mobile/image-transform.jpg" alt="foto de um ovo">
+        <div class="campoCima transfrorm">
+          <img class="egg" src="/src/images/mobile/image-transform.jpg" alt="foto de um ovo">
 
-          <div class="area1.1">
-            <h2 class="tituloTransform tituloarea1"> Transform your brand
-              <p class="resumoTransform">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
-            </h2>
-            <a href="#">Learn more</a>
-          </div>
-        </section>
+          <section class="campo_texto-ovo">
+            <h3 class="tituloTransform"> Transform your brand </h3>
+              <p class="resumoTransform">We are a full-service creative agency specializing in helping brands grow fast. 
+              Engage your clients through compelling visuals that do most of the marketing for you.</p>
+           
+            <a class="SaibaMais_transform" href="#">Learn more</a>
+          </section>
+
+        </div>
     
         <section class="campoBaixo">
-          <img src="./src/images/mobile/image-stand-out.jpg" alt="">
+          <img class="milk" src="./src/images/mobile/image-stand-out.jpg" alt="">
 
-          <div class="area1.2">
-            <h2 class="tituloStandOut tituloarea1">Stand out to the right audience
-              <p> Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
-            </h2>
-            <a href="">Learn more</a>
+          <div class="campo_texto-copo">
+            <h2 class="tituloStandOut">Stand out to the right audience </h2>
+              <p class="resusmoStandOut"> Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
+          
+            <a class="SaibaMais_StandOut" href="#">Learn more</a>
+
           </div>
         </section>
       </div>
 
-      <div class="campoesquerdo">
-        <section>
-          <p> Graphic design</p>
-          <a href=""> Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</a>
-        </section>
+      <div class="Area2">
+        <div class="DesingGrafico">
+
+            <section class="DesingGrafico_texto">
+              <p class="titulo-area2__grafic"> Graphic design
+              </p>
+              <a class="resumo__titulo-area2__grafic" href=""> Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+              </a>
+            </section>
+            </figure>
+        </div>
         
-        <section class="campoDireeito">
-          <p>Photography</p>
-          <a href="">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</a>
-        </section>
+        
+        <div class="fotografia">
+            <section class="fotografia_texto">
+              <p class="titulo__area2-fotografia">Photography</p>
+              <a class="reusmo__titulo__area2-fotografia" href="">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+              </a>
+            </section>
+          </figure>
+        </div>
       </div>
 
       <div>
         <h3> Client testimonials</h3>
         <section>
-          <img src="" alt="">
+          <img src="/src/images/image-emily.jpg" alt="">
             <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
             <a href="">Emily R.</a>
             <a href=""> Marketing Director</a>
         </section>
 
         <section>
-          <img src="" alt="">
+          <img src="/src/images/image-thomas.jpg" alt="">
             <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
             <a href="">Thomas S.</a>
             <a href="">Chief Operating Officer</a>
         </section>
 
         <section>
-          <img src="" alt="">
+          <img src="/src/images/image-jennie.jpg" alt="">
             <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
             <a href="">Jennie F.</a>
             <a href="">Business Owner</a>
@@ -110,17 +145,18 @@
       <div>
         <nav>
           <ul>
-            <li><a href=""></a></li>
+            <li><a href="Facebook" src="/src/images/icon-facebook.svg"></a></li>
 
-            <li><a href=""></a></li>
+            <li><a href="Instagram" src="/src/images/icon-instagram.svg"></a></li>
 
-            <li><a href=""></a></li>
+            <li><a href="Twitter" src="/src/images/icon-twitter.svg"></a></li>
             
-            <li><a href=""></a></li>
+            <li><a href="Pinterest" src="/src/images/icon-pinterest.svg"></a></li>
           </ul>
         </nav>
       </div>
       
     </footer>
+    <script src="./src/js/index.js"></script>
   </body>
   </html>
